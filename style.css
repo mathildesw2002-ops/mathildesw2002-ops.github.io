@@ -15,8 +15,9 @@ body {
 
 header {
     background: linear-gradient(to bottom  , #000000, #121212);
-    font-family: 'Lora', Georgia, times, serif;
-    font-size: x-large;
+    font-family: 'times new roman', Georgia, times, serif;
+    font-style: italic;
+    font-size: 35px;
     color: #EFF6EE;
     padding: 1em;
     display: flex;
@@ -27,7 +28,7 @@ header {
     height: 100vh;
 }
 
-header p {
+header img {
     position: absolute;
     bottom: 30px;
     /* afstand fra bunden */
