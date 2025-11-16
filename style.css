@@ -1,3 +1,76 @@
+@media (max-width: 750px) {  
+    .div7, .div12, .div13, .div14, .div15, .div16, .div17, .div6, .div8, .div9, .div10, .div11{
+    display: none;
+  }
+
+  #cv, #portfolie, #profil, #uddannelse, #billede  {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  
+  body {
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    color: #46443a;
+    margin: 0;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(to bottom  , #000000, #121212);
+    font-family: 'times new roman', Georgia, times, serif;
+    font-style: italic;
+    font-size: 35px;
+    color: #EFF6EE;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header img {
+    position: absolute;
+    bottom: 30px;
+    /* afstand fra bunden */
+    left: 50%;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eeebe7;
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 750px) {
 body {
     background-color: #000000;
     font-family: 'Times New Roman', Times, serif;
@@ -11,6 +84,7 @@ body {
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+    width: 100%;
 }
 
 header {
@@ -37,7 +111,7 @@ header img {
 
 #main {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
@@ -55,7 +129,8 @@ header img {
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
-    background-color:#c5bbab ;
+    background-color:#eeebe7 ;
+    width: 100%;
 }
 
 #profil {
@@ -68,11 +143,11 @@ header img {
 }
 
 #portfolie {
-    grid-area: 7 / 8 / 9 / 13;
+    grid-area: 6 / 8 / 9 / 13;
 }
 
 #uddannelse {
-    grid-area: 7 / 1 / 9 / 6;
+    grid-area: 4 / 2 / 7 / 6;
 }
 
 #billede {
@@ -84,6 +159,7 @@ header img {
 
 #billedeafmig {
     width: 170px;
+    max-width: 100%;
 }
 
 
@@ -105,11 +181,11 @@ hr {
   background-color: #9f9b86;
 }
 
-.div6 { grid-area: 5 / 3 / 7 / 6; }
+.div6 { grid-area: 7 / 1 / 8 / 6; }
 .div7 { grid-area: 1 / 1 / 2 / 3; }
 .div8 { grid-area: 11 / 1 / 13 / 3; }
 .div9 { grid-area: 8 / 6 / 10 / 8; }
-.div10 { grid-area: 11 / 10 / 13 / 13; }
+.div10 { grid-area: 12 / 10 / 13 / 13; }
 .div11 { grid-area: 5 / 10 / 6 / 12; }
 .div12 { grid-area: 1 / 12 / 3 / 13; }
 .div13 { grid-area: 4 / 7 / 6 / 9; }
@@ -120,4 +196,6 @@ hr {
 
 [class^="div"] {
   border-radius: 20px;
+}
+
 }
